@@ -15,9 +15,6 @@
     "integration-testing": "nodemon --exec 'nyc mocha ./test/test_setup.js ./test/integration --recursive --exit'",
     "scan": "sonar-scanner -Dsonar.host.url=$SONAR_HOST -Dsonar.projectVersion=$npm_package_version",
     "create-vprops": "node ./properties/populateProperties.js",
-    "prebuild": "cp ./dev/env/dev/.env.testing . && npm cit",
-    "build": "npm run create-vprops && npm run scan && npm prune",
-    "postbuild": "npm publish && npm pack",
     "version": "auto-changelog -p && git add CHANGELOG.md",
     "release": "release-it patch --ci",
     "postrelease": "release-it patch --preRelease=SNAPSHOT --ci"
