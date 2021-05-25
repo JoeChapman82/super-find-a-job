@@ -1,0 +1,163 @@
+.header-main {
+    background-color: #000;
+    width: 100%;
+    height: auto;
+    min-height: 45px;
+    position: relative;
+}
+
+.header-main-large {
+    background-color: #000;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-top: .2rem;
+}
+
+.header-internal-wrapper {
+    width: 100%;
+    padding: 7px 2rem 10px;
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    text-align: right;
+}
+
+.header-internal-wrapper-wrapping {
+    flex-wrap: wrap;
+}
+
+
+.header-service-links-wrapper,
+.header-sign-out-wrapper {
+    padding-top: .6rem;
+}
+
+.header-full-width-wrapper {
+    width: 100%;
+    padding-bottom: .6rem;
+}
+
+.header-service-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 180%;
+    font-weight: bold;
+}
+
+.header-service-link:focus {
+    color: #000;
+    background-color: #fd0;
+    outline: 2px solid #fd0;
+}
+
+.header-blue-bar {
+    background-color: $govuk-link-colour;
+    width: 960px;
+    max-width: 100%;
+    height: 10px;
+    margin: 0 auto;
+}
+
+.environment-notice {
+    background-color: $govuk-link-colour;
+    padding: .25rem .5rem;
+    margin-left: .5rem;
+    vertical-align: .2rem;
+    border-radius: 3px;
+    position: absolute;
+    left: 5px;
+    top: 25%;
+    z-index: 0;
+}
+
+.environment-training {
+    background-color: pink;
+}
+
+.environment-local {
+    background-color: govuk-colour('purple');
+}
+
+.environment-development {
+    background-color: govuk-colour('light-blue');
+}
+
+.environment-qa {
+    background-color: govuk-colour('yellow');
+}
+
+.environment-QA {
+    background-color: govuk-colour('orange');
+}
+
+.header-internal-link,
+.header-internal-link:visited,
+.header-internal-link:active,
+.header-internal-link:link {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.header-internal-link:focus {
+    color: #000;
+    background-color: #fd0;
+    outline: 2px solid #fd0;
+}
+
+.header-sign-out-link,
+.header-sign-out-link:visited,
+.header-sign-out-link:active,
+.header-sign-out-link:link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header-sign-out-link:focus {
+    color: #000;
+    background-color: #fd0;
+    outline: 2px solid #fd0;
+}
+
+@media screen and(max-width: 1200px) {
+    .environment-notice {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 960px) {
+
+    .header-internal-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .header-main {
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 780px) {
+
+    .header-service-links-wrapper {
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .header-main {
+        height: 80px;
+        height: auto;
+    }
+
+
+    .header-full-width-wrapper {
+        padding-bottom: 0;
+    }
+
+}

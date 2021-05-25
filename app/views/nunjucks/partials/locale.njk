@@ -1,0 +1,22 @@
+<div class="locale-toggle-wrapper">
+    <div class="back-button-wrapper">
+        {% if activeView !== "home" and activeView.length !== 0 %}
+        <a href="/home" class="govuk-back-link">Home</a>
+        {% endif %}
+    </div>
+    {% if locales.length > 1 %}
+        <div class="locale-toggle">
+            <form action="/toggle-locale" method="post">
+                <input type="hidden" name="view" value="{{ currentUrl }}"/>
+                <input type="hidden" name="_csrf" value="{{ _csrf }}"/>
+                {% for locale in locales %}
+                    <button name="locale" class="locale-toggle-button {% if activeLocale === locale %}active-locale-button {% endif %} type="submit" value="{{ locale }}">{{ content.common.locales[locale] }}</button>
+                    {% if loop.index !== locales.length %}
+                        <span>|</span> 
+                    {% endif %}
+                {% endfor %}
+            </form>
+        </div>
+    {% endif %}
+    <div class="clearfix"></div>
+</div>

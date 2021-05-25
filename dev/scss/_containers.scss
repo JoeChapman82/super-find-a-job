@@ -1,0 +1,38 @@
+.content {
+    min-height: 600px;
+    height: auto !important;
+    height: 600px;
+}
+
+.full-width-container {
+    width: 100%;
+    padding: 1rem;
+}
+
+.gov-uk-container {
+    max-width: 1024px;
+    height: inherit;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+main {
+    padding-bottom: 80px;
+}
+
+.inset-fieldset {
+    border-left: 4px solid #b1b4b6;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-start {
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 1.5rem;
+}

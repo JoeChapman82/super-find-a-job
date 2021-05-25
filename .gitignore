@@ -1,0 +1,16 @@
+.DS_Store
+node_modules/*
+.jshintrc
+.nyc_output
+.scannerwork/*
+/Dockerfile
+.nyc_output/*
+/.env
+/.env.testing
+/ecosystem.config.js
+./coverage/lcov.info
+.idea
+*.iml
+coverage
+/.npmrc
+dev/certs/*

@@ -1,0 +1,16 @@
+{% extends "nunjucks/templates/main.njk" %}
+
+{% block pageTitle %}{{ pageContent.pageTitle }}{% endblock %}
+{% block stylesheets %}{% endblock %}
+{% block content %}
+<div class="full-centred-flex-wrapper">
+    <form action="/" method="post">
+            <input type="hidden" name="_csrf" value="{{ _csrf }}">
+            <input type="submit" name="submit" value="submit">
+    </form>
+</div>
+
+
+{% endblock %}
+
+{% block scripts %}{% endblock %}

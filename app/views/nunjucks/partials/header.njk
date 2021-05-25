@@ -1,0 +1,11 @@
+{% set userHasLongName = user and isSignedIn and user.firstName.length + user.lastName.length >= 14 %}
+
+<header class="header-main" role="banner" data-module="header"
+    {%- for attribute, value in params.attributes %} {{attribute}}="{{value}}"{% endfor %}>
+    <div class="header-internal-wrapper">
+        <div class="header-service-name-wrapper">
+          <a href="/" class="header-service-link">{{ serviceName | default('Set a service name')}}</a>
+        </div>
+     </div>
+</header>
+

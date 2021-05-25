@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template">
+    <head>
+        <meta charset="utf-8" />
+        <title>{% if errors %}Error: {% endif %}{% block pageTitle %}{% endblock %} - {{ serviceName | default('Set a service name') }}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#0b0c0c" />
+
+        {% block headIcons %}
+            <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/images/favicon.ico" type="image/x-icon" />
+            <link rel="mask-icon" href="/images/govuk-mask-icon.svg" color="{{ themeColor | default('#0b0c0c') }}"> {# Hardcoded value of $govuk-black #}
+        {% endblock %}
+
+        {% block head %}{% endblock %}
+            <meta property="og:image" content="/images/govuk-opengraph-image.png">
+            <link rel="stylesheet" href="/css/main.css">
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <body class="govuk-template__body">
+        {% block bodyStart %}{% endblock %}
+
+
+        {% block skipLink %}
+            {% include "nunjucks/partials/skip-link.njk" %}
+        {% endblock %}
+
+        {% block header %}
+            {% include "nunjucks/partials/header.njk" %}
+        {% endblock %}
+
+        {% block main %}
+            <div>
+                {% block beforeContent %}{% endblock %}
+                <main class="content" id="content" role="main">
+                {% block content %}
+
+                {% endblock %}
+                </main>
+            </div>
+        {% endblock %}
+
+        {% block footer %}
+            {% include "nunjucks/partials/footer.njk" %}
+        {% endblock %}
+
+        {% block bodyEnd %}{% endblock %}
+        <script type="text/javascript" src="/scripts/all.js"></script>
+        <script type="text/javascript" src="/scripts/main.js"></script>
+
+        {% block scripts %}{% endblock %}
+
+    </body>
+</html>

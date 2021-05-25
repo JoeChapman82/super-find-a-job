@@ -1,0 +1,23 @@
+{% extends "nunjucks/templates/main.njk" %}
+
+{% block pageTitle %}Home{% endblock %}
+{% block stylesheets %}{% endblock %}
+{% block content %}
+
+        <form action="/home" method="post">
+            <div class="home-page-grid-wrapper">
+                <div class="my-jobs-card">
+                    <a class="full-card-link" href="/my-jobs">My Jobs</a>
+                </div>
+                <div class="new-ideas-card">
+                    <a class="full-card-link" href="/new-ideas">New ideas</a>
+                </div>
+                <div class="training-and-provision-card three">
+                    <a class="full-card-link" href="/training-and-provision">Training and provision</a>
+                </div>
+            </div>
+        </form>
+
+{% endblock %}
+
+{% block scripts %}{% endblock %}

@@ -1,0 +1,38 @@
+.locale-toggle-wrapper {
+    width: 960px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: -1rem;
+}
+
+.locale-toggle {
+    float: right;
+    padding: 0;
+    margin: 0;
+}
+
+.back-button-wrapper {
+    float: left;
+    padding: 0;
+    margin: 0; 
+}
+
+.locale-toggle-button {
+    color: rgb(29, 112, 184);
+    display: inline-block;
+    font-size: 16px;
+    line-height: 1.14286;
+    border-bottom: 1px solid rgb(29, 112, 184);
+    margin: 15px 5px;
+    border: none;
+    background: none;
+    background-color: none;
+}
+
+.locale-toggle-button:hover {
+    cursor: pointer;
+}
+
+.active-locale-button {
+    color: rgba(0, 0, 0, 1);
+}

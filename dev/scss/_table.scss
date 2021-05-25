@@ -1,0 +1,16 @@
+.clickable-table-row:hover {
+    cursor: pointer;
+    background-color: lighten($color: $govuk-link-colour, $amount: 10%);
+}
+
+.break-text {
+    word-break: break-all;
+}
+
+.govuk-summary-list__value {
+    white-space: pre-wrap;
+}
+
+.errors {
+    border-left: 5px solid $govuk-error-colour;
+}

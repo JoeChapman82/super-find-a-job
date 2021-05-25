@@ -1,0 +1,62 @@
+.reduced-margin-heading {
+    margin-bottom: 0.5rem;
+}
+
+.small-margin-heading {
+    margin-bottom: 1rem;
+}
+
+.panel-small-text > .govuk-panel__body {
+    font-size: 105%;
+    font-weight: bold;
+}
+
+.copyright-spacer {
+    height: 100px;
+    display: block;
+}
+
+.support-links-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.support-link {
+    color: $govuk-secondary-text-colour;
+}
+
+.bid-action-link {
+    display: block;
+    margin-top: .5rem;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.secondary-link {
+    font-size: 120%;
+    margin-top: -.5rem;
+}
+
+.no-wrap-table-cell {
+    white-space: nowrap;
+}
+
+.warningText {
+    margin-top: -.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.errorText {
+    color: $govuk-error-colour;
+    font-weight: bold;
+}
+
+.card-text {
+    color: white;
+}
+
+.card-heading {
+    margin-top: 0;
+}

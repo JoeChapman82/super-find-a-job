@@ -1,0 +1,27 @@
+@import 'node_modules/govuk-frontend/govuk/all';
+
+html,
+body,
+*,
+*::before,
+*::after {
+    font-family: Arial !important;
+    box-sizing: border-box;
+}
+
+.govuk-footer__copyright-logo {
+    background-image: url('/images/govuk-crest-2x.png');
+}
+
+@import 'header';
+@import 'containers';
+@import 'helpers';
+@import 'typography';
+@import 'buttons';
+@import 'locale';
+@import 'table';
+@import 'inputs';
+@import 'tabs';
+@import 'autocomplete';
+@import 'wrappers';
+@import 'links';
