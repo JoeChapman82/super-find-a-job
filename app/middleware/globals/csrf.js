@@ -2,7 +2,7 @@ const csrf = require('csurf');
 const config = require('../../config/main');
 
 module.exports = (app) => {
-    app.use(csrf({cookie: {maxAge: config.csrf.lifespan, httpOnly: true, signed: true, secure: config.csrf.secure}}));
+    app.use(csrf({cookie: {maxAge: config.csrf.lifespan, httpOnly: true, signed: true, secure: false}}));
 
     app.use((req, res, next) => {
         res.locals._csrf = req.csrfToken();
